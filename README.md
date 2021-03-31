@@ -66,9 +66,9 @@ For specific gramma, see the example `script.md`:
 @ Scene one
 - Hi.
 ; Some comments
-- Hi there. - And you look good today,
-; The above are two phases. To use "- " in your text, 
-; you may write two lines and concat them with "- ".
+- Hi there. - And you look good today!
+; The above are two clauses. To use "- " in your text, 
+; you may write two lines and concat them (in Elm) with `a ++ "- " ++ b`.
 - Aloha!
 - Be nice.
 ; and badass (comments are flexible)
@@ -92,4 +92,7 @@ And extra spaces and new-line breaks in your scripts are preserved in the genera
 
 ## Advanced (?)
 You can change the input / output source by changing the first few lines in `NoScript.py`:
-
+```python
+text_script = "my_awesome_game_embedded_scripts.md" # the position of your input file, can include path
+elm_script = "../my_awesome_game/src/InevitableVillainy.elm" # the position of your output file, can include path
+```

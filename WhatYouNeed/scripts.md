@@ -1,9 +1,9 @@
 @ Scene one
 - Hi.
 ; Some comments
-- Hi there. - And you look good today,
-; The above are two phases. To use "- " in your text, 
-; you may write two lines and concat them with "- ".
+- Hi there. - And you look good today!
+; The above are two clauses. To use "- " in your text, 
+; you may write two lines and concat them (in Elm) with `a ++ "- " ++ b`.
 - Aloha!
 - Be nice.
 ; and badass (comments are flexible)
