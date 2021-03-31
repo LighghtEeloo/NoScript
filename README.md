@@ -59,7 +59,7 @@ A demo is written for you to play: run `cd TestGround && elm reactor`, and open 
 
 ## Script Gramma
 
-For specific gramma, see the example `scripte.md`:
+For specific gramma, see the example `script.md`:
 
 
 ```
@@ -80,6 +80,16 @@ Or naughty.
 ; @xxx ... @ (where '@'s always takes a new line) denotes a section.
 @ Scene two
 - Hey.
+- How's it going?
 @
 
+
 ```
+
+Please note that **the spaces are necessary**!!! i.e., please write "- " instead of "-" whenever needed.
+Also, "@" clauses require an individual line, meaning "- xxx. @" won't work.
+And extra spaces and new-line breaks in your scripts are preserved in the generated code.
+
+## Advanced (?)
+You can change the input / output source by changing the first few lines in `NoScript.py`:
+

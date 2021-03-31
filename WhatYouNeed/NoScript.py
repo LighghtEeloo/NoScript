@@ -1,5 +1,5 @@
-text_script = "scripts.md"
-elm_script = "InevitableVillainy.elm"
+text_script = "scripts.md" # the position of your input file, can include path
+elm_script = "InevitableVillainy.elm" # the position of your output file, can include path
 
 
 
