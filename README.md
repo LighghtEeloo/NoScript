@@ -3,6 +3,22 @@ The *NoScript* Proj, also pronunced *KnowScript* Proj, aims at bringing a cleare
 
 *(script: some narrative, instructions or lines in your game.)*
 
+## Quick Take Away
+
+### Type the Commands
+
+```bash
+git clone https://github.com/LighghtEeloo/NoScript.git # download this tool
+cd ./NoScript/WhatYouNeed # move working directory
+cat script.md # show the script file which will be transpiled into .elm (not mandatory)
+python3 ./NoScript.py # perform transpile, generating InevitableVillainy.elm
+cp -f Script.elm InevitableVillainy.elm ../TestGround/src
+cd ../TestGround # move working directory
+elm reactor
+```
+
+### Objective
+
 This is a small and simple helper to which can separate your **embedded script lines** from your **Elm code**, which:
 1. makes your code's intention clear (not some random scripts embedded all over).
 2. makes your scripts clearer to a TC reader - without touching your code.
@@ -35,7 +51,7 @@ which actually means:
 
 The project works by running `python3 NoScript.py`; binary versions are on the way. At the same time, a bridging code called `Script.elm` is given.
 
-First, place `script.md` in the same directory with `NoScript.py` and run `python3 NoScript.py` at this directory. An `InevitableVillainy.elm` will be generated.
+First, place `script.md` in the same directory with `NoScript.py` and run `python3 ./NoScript.py` in this directory. An `InevitableVillainy.elm` will be generated.
 
 Next, place `Script.elm` and `InevitableVillainy.elm` in your src folder.
 
